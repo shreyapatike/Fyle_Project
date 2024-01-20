@@ -2,7 +2,7 @@ import { Octokit, App } from "https://esm.sh/octokit";
 
 
 const octokit = new Octokit({
-  auth: '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'
+  auth: ''
 });
 
 const form = document.getElementById("userSubmitForm");
