@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.render("home", { data: null });
+  res.render("home", { success: false, data: null });
 });
 
 app.post("/getUser", async (req, res) => {
@@ -18,10 +18,9 @@ app.post("/getUser", async (req, res) => {
   const ans = await getUser(userName);
 
   if (ans.status === true) {
-    // console.log(ans.data);
-    return res.render("home", { data: ans.data });
+    return res.render("home", { success: true, data: ans.data });
   } else {
-    return res.render("home", { data: "User Not found" });
+    return res.render("home", { success: false, data: "User Not found" });
   }
 });
 

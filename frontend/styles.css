@@ -1,3 +1,33 @@
+:root {
+    --primary-color: #1558a0;
+    --secondary-color: #6c757d; 
+    --background-color: #f8f9fa;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+  }
+  
+  h1, h5 {
+    color: var(--primary-color);
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Bootstrap card shadow */
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .heading-color {
+    color: var(--primary-color);
+  }
+
 * {
     margin: 0;
     box-sizing: border-box;
