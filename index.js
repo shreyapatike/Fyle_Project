@@ -2,7 +2,7 @@ const express = require("express");
 const { getUser } = require("./octokit");
 
 const app = express();
-const port = 3000;
+const port = 9000;
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/frontend"));
